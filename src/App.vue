@@ -32,7 +32,7 @@ import posts from "./datas/post";
   </div> -->
 
   <div v-for="(a, i) in posts" :key="i">
-    <img :src="posts[i].image" class="image-size" />
+    <img :src="posts[i].image" class="image-size" @click="modal = true" />
     <h3>{{ a.title }}</h3>
     <h4>{{ a.content }}</h4>
     <h4>{{ a.price }}원</h4>
